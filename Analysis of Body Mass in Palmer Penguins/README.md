@@ -1,9 +1,9 @@
 # Biometric Variation & Body Mass Modeling in Palmer Archipelago Penguins
 
 ## Overview
-Understanding morphological variation and sexual dimorphism in seabirds is fundamental for ecological and physiological research. This project presents an end-to-end statistical analysis in **R** investigating body mass drivers across three Antarctic penguin species (*Pygoscelis adeliae*, *P. antarcticus*, and *P. papua*) on the Palmer Archipelago.
+Understanding morphological variation and sexual dimorphism in seabirds is fundamental for ecological and physiological research. This project presents an end-to-end statistical analysis in R investigating body mass drivers across three Antarctic penguin species (*Pygoscelis adeliae*, *P. antarcticus*, and *P. papua*) on the Palmer Archipelago.
 
-Rather than relying solely on descriptive statistics, this repository demonstrates a **rigorous inferential pipeline**: checking parametric assumptions before ANOVA testing, computing post-hoc pairwise comparisons, and fitting a multiple linear regression model.
+Rather than relying solely on descriptive statistics, this repository demonstrates a rigorous inferential pipeline: checking parametric assumptions before ANOVA testing, computing post-hoc pairwise comparisons, and fitting a multiple linear regression model.
 
 ## Data Source
 The dataset originates from the `palmerpenguins` package, made available via [TidyTuesday (2020-07-28)](https://github.rfordatascience/tidytuesday). Measurements were collected by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) program.
@@ -32,7 +32,7 @@ $$\text{Body Mass (g)} = \beta_0 + \beta_1 (\text{Flipper Length}) + \beta_2 (\t
 * **Visual Representation:** A hybrid visualization combining **violin plots** (density distribution) with **embedded boxplots** (median and quartiles) to highlight distribution shapes across species.
 * **Results:** Gentoo penguins (*Pygoscelis papua*) exhibit significantly higher body mass compared to both Adélie and Chinstrap penguins ($p < 0.001$), while no statistically significant mass difference was detected between Adélie and Chinstrap species ($p > 0.05$).
 
-*(Insert your `species_weight.png` here: `![Species Body Mass](outputs/species_weight.png)`)*
+![Species Body Mass](Plots/species_weight.png)
 
 #### Post-Hoc Comparison Table (Tukey HSD)
 | Comparison | Estimate (g) | Conf. Low | Conf. High | Adj. P-Value |
@@ -47,5 +47,5 @@ $$\text{Body Mass (g)} = \beta_0 + \beta_1 (\text{Flipper Length}) + \beta_2 (\t
 * **Visual Representation:** Scatter plot with dual regression trendlines split by sex, demonstrating interaction and additive effects.
 * **Results:** Both flipper length ($p < 0.001$) and male sex ($p < 0.001$) are strong, positive predictors of overall body mass. Holding flipper length constant, male penguins display a consistent mass premium due to sexual dimorphism.
 
-*(Insert your `multiple_regression.png` here: `![Multiple Regression](outputs/multiple_regression.png)`)*
+![Multiple Regression](Plots/multiple_regression.png)
 
