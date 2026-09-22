@@ -20,14 +20,14 @@ Key packages used:
 
 Finding: The data clearly illustrates the stagnation of capture fisheries starting in the late 1980s/early 1990s, likely due to maximum sustainable yields being reached or overfishing. The subsequent gap in global demand has been entirely filled by the exponential growth of aquaculture.
 
-![Global Trend](outputs/global_trend.png)
+![Global Trend](Plots/global_trend.png)
 
 ## 2. National Dependence on Aquaculture (Latest Year)
 *Description: A global choropleth map representing the proportion (%) of total seafood production derived from aquaculture for each country.*
 
 Finding: The spatial analysis reveals significant geographical disparity. While some inland or densely populated Asian nations exhibit an extreme dependence on aquaculture (>80%), many coastal and oceanic nations still rely almost exclusively on traditional capture fisheries. 
 
-![Aquaculture Map](outputs/aquaculture_map.png)
+![Aquaculture Map](Plots/aquaculture_map.png)
 
 # Repository Structure
 * `/scripts` - Contains the `main_analysis.R` script with the full pipeline.
